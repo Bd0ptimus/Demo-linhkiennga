@@ -1,0 +1,8 @@
+/node_modules
+/vendor
+/.idea
+.idea/
+.env
+/uploads
+/config/config.json
+/config/connectDB.json

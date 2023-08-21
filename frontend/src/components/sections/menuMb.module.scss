@@ -1,0 +1,65 @@
+@import '../../styles/main.module.scss';
+
+.menuMain {
+    font-size: 18px;
+    @include vertical-align-center;
+
+    .menuElement {
+        margin: 20px 0px;
+        width: 100%;
+
+        & :hover {
+            // border-radius: 10px;
+            color: $white-up;
+            background-color: $blue-hover;
+            transition: .3s;
+        }
+    }
+
+    .infoHeader {
+        font-weight: 600;
+        text-decoration: none;
+        text-align: center;
+        font-size: 18px;
+        padding: 1.5px 8px;
+        color: $color-primary;
+        margin: 10px 0px 0px;
+    }
+
+    .infoText {
+        text-decoration: none;
+        text-align: center;
+        font-size: 15px;
+        padding: 1px 8px;
+        color: $color-primary;
+        margin: 0px;
+    }
+
+    .menuLink {
+        text-decoration: none;
+        text-align: center;
+        font-size: 18px;
+        padding: 2.5px 8px;
+        color: $color-primary;
+    }
+}
+
+
+@media screen and (min-width : 1020px) and (max-width: 10000px) {
+    .menuMain {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width : 820px) and (max-width: 1020px) {
+    .menuMain {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width : 450px) and (max-width: 820px) {}
+
+
+@media screen and (max-width: 450px) {}
